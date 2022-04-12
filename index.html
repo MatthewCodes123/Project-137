@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <title>AI Object Finder</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+      <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+      
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body background="https://wallpapercave.com/uwp/uwp769019.gif">
+        <h1 class="btn btn-info title">AI Object Finder</h1>
+        <h3 class="btn btn-info info">The input name which you will give should match the names present in cocossd model then only it'll detect.</h3>
+        <br><br>
+        <p class="name">Object Name:</p>
+        <br>
+        <center>
+        <input id="object_name" class="form-control input" type="text" placeHolder="Type Object Here">
+        <br><br>
+        <button class="btn btn-success" onclick="start()">Start</button>
+        <br><br>
+        <h1 id="status" class="btn btn-danger">Status : </h1>
+        <h1 id="object_status" class="btn btn-warning"></h1>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
